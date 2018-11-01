@@ -1,11 +1,19 @@
 {
-  "name": "myapp",
+  "name": "node-rest-api",
   "version": "1.0.0",
-  "description": "test app",
-  "main": "app.js",
+  "description": "REST API with Node Express and MongoDb",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/.bin/nodemon server.js"
   },
   "author": "JT",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
 }
